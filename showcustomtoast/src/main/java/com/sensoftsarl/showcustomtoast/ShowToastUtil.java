@@ -16,26 +16,26 @@ public class ShowToastUtil extends Activity {
     // Error toast
     public static void error(Context context, String message) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View customToastroot =inflater.inflate(R.layout.error_toast, null);
-        TextView textView = (TextView) customToastroot.findViewById(R.id.textView);
+        View view =inflater.inflate(R.layout.error_toast, null);
+        TextView textView = (TextView) view.findViewById(R.id.textView);
         textView.setText(message);
-        showCostomToast(context,customToastroot);
+        showCostomToast(context,view);
     }
     // Warming toast
     public static void warming(Context context,String message) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View customToastroot =inflater.inflate(R.layout.warming_toast, null);
-        TextView textView = (TextView) customToastroot.findViewById(R.id.textView);
+        View view =inflater.inflate(R.layout.warming_toast, null);
+        TextView textView = (TextView) view.findViewById(R.id.textView);
         textView.setText(message);
-        showCostomToast(context,customToastroot);
+        showCostomToast(context,view);
     }
     // Info toast
     public static void info(Context context,String message) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View customToastroot =inflater.inflate(R.layout.info_toast, null);
-        TextView textView = (TextView) customToastroot.findViewById(R.id.textView);
+        View view =inflater.inflate(R.layout.info_toast, null);
+        TextView textView = (TextView) view.findViewById(R.id.textView);
         textView.setText(message);
-        showCostomToast(context,customToastroot);
+        showCostomToast(context,view);
     }
 
     public static void showCostomToast(Context context,View v){
