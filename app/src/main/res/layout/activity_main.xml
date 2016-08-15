@@ -18,7 +18,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/error"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -27,7 +27,7 @@
         android:textColor="#fff" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/warming"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -36,12 +36,21 @@
         android:textColor="#fff" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="btnInfo"
         android:text="Custom Toast Info "
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="btnSuccess"
+        android:text="Custom Toast Success "
         android:textColor="#fff" />
 
 </LinearLayout>

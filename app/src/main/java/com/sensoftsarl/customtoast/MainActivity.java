@@ -18,19 +18,23 @@ public class MainActivity extends Activity {
         }
 
 
-        // Red toast
+        // Error toast
     public void btnError(View view) {
-        ShowToastUtil.error(context,"Exemple de message d'erreur");
+        ShowToastUtil.error(context,"Exemple de message d'erreur",1);
     }
-    // Yellow toast
+
+        // Warming toast
     public void btnWarming(View view) {
-
-        ShowToastUtil.warming(context,"Exemple de warming");
+        ShowToastUtil.warming(context,"Exemple de warming",1);
     }
-    // Blue toast
-    public void btnInfo(View view) {
 
-        ShowToastUtil.info(context,"Exemple de message info");
+        // Info toast
+    public void btnInfo(View view) {
+        ShowToastUtil.info(context,"Exemple de message info",1);
+    }
+     // Success toast
+    public void btnSuccess(View view) {
+        ShowToastUtil.success(context,"Exemple de message success",1);
     }
 
 
